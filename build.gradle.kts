@@ -17,8 +17,7 @@ plugins {
     alias(libs.plugins.kotlin.serialization) apply false
     alias(libs.plugins.ktlint.gradle.plugin) apply false
     alias(libs.plugins.keeper) apply false
-    id "org.sonarqube" version "6.0.1.5171"
-
+    id("org.sonarqube") version "6.0.1.5171"
 }
 
 sonar {
