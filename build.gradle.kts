@@ -17,6 +17,15 @@ plugins {
     alias(libs.plugins.kotlin.serialization) apply false
     alias(libs.plugins.ktlint.gradle.plugin) apply false
     alias(libs.plugins.keeper) apply false
+    id "org.sonarqube" version "6.0.1.5171"
+
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "Anki-Android"
+    property "sonar.projectName", "Anki Android"
+  }
 }
 
 val localProperties = java.util.Properties()
